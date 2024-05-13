@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
+  particleSystem: {fileID: 0}
 --- !u!1102 &5848878736295111983
 AnimatorState:
   serializedVersion: 6

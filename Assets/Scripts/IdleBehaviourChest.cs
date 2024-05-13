@@ -5,10 +5,16 @@ using UnityEngine;
 public class IdleBehaviourChest : StateMachineBehaviour
 {
     public Transform _player;
+    public ParticleSystem particleSystem;
 
+    public override void OnStateMachineEnter(Animator animator, int stateMachinePathHash)
+    {
+        
+    }
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         _player = GameObject.FindGameObjectWithTag("Player").transform;
+        particleSystem = GameObject.Find("chestParticles")?.GetComponent<ParticleSystem>();
     }
     public bool CheckPlayer(Transform mySelf)
     {
